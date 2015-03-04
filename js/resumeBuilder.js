@@ -200,7 +200,7 @@ projects.display = function() {
 }
 projects.display();
 
-function displayEducation() {
+education.display = function() {
 	for (schoolInfo in education.schools) {
 		$("#education").append(HTMLschoolStart);
 
@@ -234,7 +234,7 @@ function displayEducation() {
 		$("#education-entry:last").append(formattedURL);	
 	}
 }
-displayEducation();
+education.display();
 
 // function displayOnlineEducation() {
 // 	for (onlineCourse in education.onlineCourses) {
