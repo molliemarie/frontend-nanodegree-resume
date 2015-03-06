@@ -129,10 +129,17 @@ bio.display = function(){
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
 
-	// for (var stuff in bio.contacts) {
-	// $("#header").append(HTMLcontactGeneric);
-	// }
+	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+	$("#topContacts").append(formattedMobile)
 
+	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	$("#topContacts").append(formattedEmail)
+
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+	$("#topContacts").append(formattedGithub)
+
+	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	$("#topContacts").append(formattedLocation)	
 
 	if(bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
