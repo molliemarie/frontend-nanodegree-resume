@@ -2,6 +2,14 @@
 // $("#header").append(formattedemployer);
 //Got the above two lines of code from forum. Not sure if it's in the right place
 
+var formattedName = HTMLheaderName.replace("%data%", "Mollie Marie Pettit");
+
+
+var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
 var skills = ["awesomeness", "programming", "teaching", "CSS"];
 
 var bio = {
@@ -112,8 +120,10 @@ var projects = {
 }
 
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-$("#name").append(formattedName);
+// var formattedName = HTMLheaderName.replace("%data%", bio.name);
+// $("#header").append(formattedName);
+
+
 
 if(bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
