@@ -158,14 +158,21 @@ var work = {
             "location": "Abu Dhabi, UAE",
             "title": "Geoscientist",
             "years": "2014 - Present",
-            "description": "Working as a Geoscientist, I process acoustic data for oil and gas wells in the Gulf geomarket, carry out deterministic and stochastic formation evaluation, and prepare final product and deliverables for customers. I was awarded the 'Team Player' award at the conclusion of a five-week Geoscience Academy training course. "
+            "description": ["Process acoustic data for oil and gas wells in the Gulf geomarket", "Carry out deterministic and stochastic formation evaluation", "Prepare final product and deliverables for customers", "Awarded the 'Team Player' award at the conclusion of a five-week Geoscience Academy training course. "]
+        },
+        {
+        	"employer": "Stanford University",
+            "location": "Stanford, CA, USA",
+            "title": "Community Associate Training Coordinator",
+            "years": "2013",
+            "description": ["Organized 12 training events for 130 Community Associates", "Introduced new templates and methods for simpler and easier tracking of activity", "Coordinated all logistical information between participants and maintained records of participation", "Created poster presentations to showcase the Graduate Life Office activities and yearly progress for Stanford’s yearly Assessment Fair"]
         },
         {
             "employer": "Stanford University",
-            "location": "Palo Alto, CA, USA",
+            "location": "Stanford, CA, USA",
             "title": "Researcher",
             "years": "2010-2013",
-            "description": "As a researcher with Stanford University, I conducted research on coastal bluff retreat in Pacifica, CA as part of a Master’s Degree. I presented the results in a Master's thesis in 2013 as well as in presentations. I had a research article published"
+            "description": ["Conducted research on coastal bluff retreat in Pacifica, CA as part of a Master’s Degree", "Presented the results in a Master's thesis in 2013 as well as in presentations", "Research article published in the May 2014 issue of the Environmental & Engineering Geoscience Journal; a picture from my study was featured on the cover of the issue", "Utilized MATLAB, ArcGIS, Adobe Suites (Illustrator, Photoshop), and Microsoft Office (Word, Excel, PowerPoint) for data preparation, analysis, and presentation", "Communicated and coordinated with the local USGS as well as several California government offices for data collection"]
         }
     ]
 };
