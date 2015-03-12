@@ -35,7 +35,9 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 
-var HTMLworkDescriptionStart = '<ul id="descript"></ul>'
+var HTMLworkDescriptionStartBH = '<ul id="descript-BH"></ul>';
+var HTMLworkDescriptionStartStanRes = '<ul id="descript-StanRes"></ul>';
+var HTMLworkDescriptionStartStanTrainCoor = '<ul id="descript-StanTrainCoor"></ul>';
 var HTMLworkDescription = '<br><li><p>%data%</p></li>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
@@ -141,6 +143,10 @@ function initializeMap() {
     // the locations array
     for (var job in work.jobs) {
       locations.push(work.jobs[job].location);
+    }
+
+    for (var i in bio.places_lived) {
+      locations.push(bio.places_lived[i]);
     }
 
     return locations;

@@ -14,7 +14,8 @@ var bio = {
 	},
 	"WelcomeMessage": "Welcome and stuff and stuff and stuff.",
 	"skills": ["awesomeness", "programming", "teaching", "CSS", "HTML", "Mathematics"],
-	"biopic": "images/me.jpg"
+	"biopic": "images/me.jpg",
+	"places_lived" : ["Morgantown, WV","Minneapolis, MN","Boulder, CO", "Blacksburg, VA", "Alexandria, VA", "Aberdeen, SD", "Cherokee, IA", "Bradenton, FL"]
 };
 
 bio.display = function(){
@@ -179,25 +180,6 @@ var work = {
     ]
 };
 
-work.display = function(){
-	for (var job in work.jobs) {
-
-	    $("#workExperience").append(HTMLworkStart);
-
-	    var formattedEmployer= HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-	    var formattedTitle = HTMLworkTitle.replace("%data%",work.jobs[job].title);
-	    var formattedEmployerTitle = formattedEmployer + formattedTitle;
-	    $(".work-entry:last").append(formattedEmployerTitle);
-
-	    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].years);
-	    $(".work-entry:last").append(formattedDates);
-
-	    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-	    $(".work-entry:last").append(formattedDescription);
-	}
-}
-work.display();
-
 	// if(bio.skills.length > 0) {
 	// 	$("#header").append(HTMLskillsStart);
 
@@ -220,6 +202,37 @@ work.display();
 	// 		bio.skills[5]);
 	// 	$("#skills").append(formattedSkill);
 	// }
+
+work.display = function(){
+	for (var job in work.jobs) {
+
+	    $("#workExperience").append(HTMLworkStart);
+
+	    var formattedEmployer= HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+	    var formattedTitle = HTMLworkTitle.replace("%data%",work.jobs[job].title);
+	    var formattedEmployerTitle = formattedEmployer + formattedTitle;
+	    $(".work-entry:last").append(formattedEmployerTitle);
+
+	    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].years);
+	    $(".work-entry:last").append(formattedDates);
+
+	 //    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+	 //    $(".work-entry:last").append(formattedDescription);
+
+		$("#workExperience").append(HTMLworkDescriptionStartBH);
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[0]);
+		$("#descript-BH").append(formattedDescription);
+
+		$("#workExperience").append(HTMLworkDescriptionStartStanRes);
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[1]);
+		$("#descript-StanRes").append(formattedDescription);
+
+		$("#workExperience").append(HTMLworkDescriptionStartStanTrainCoor);
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[2]);
+		$("#descript-BH").append(formattedDescription);
+	}
+}
+work.display();
 
 // RETURNS PLACE OF WORK INTO CONSOLE
 
