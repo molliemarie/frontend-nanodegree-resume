@@ -43,29 +43,16 @@ bio.display = function(){
 	var formattedMessage = HTMLWelcomeMsg.replace("%data%", bio.WelcomeMessage);
 	$("#header").append(formattedMessage);
 
-
-
+	// Shortened Skills section!! Made it more efficient. YAY!
 	if(bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
-
-		var formattedSkill = HTMLskills.replace("%data%", 
-			bio.skills[0]);
-		$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", 
-			bio.skills[1]);
-		$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", 
-			bio.skills[2]);
-		$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", 
-			bio.skills[3]);
-		$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", 
-			bio.skills[4]);
-		$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", 
-			bio.skills[5]);
-		$("#skills").append(formattedSkill);
+	}
+	for (i in bio.skills){
+		if(bio.skills.length > i) {
+			var formattedSkill = HTMLskills.replace("%data%", 
+				bio.skills[i]);
+			$("#skills").append(formattedSkill);
+		}
 	}
 }
 bio.display();
