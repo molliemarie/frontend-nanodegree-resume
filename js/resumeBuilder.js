@@ -219,15 +219,15 @@ var projects = {
         "title": "Mockup to Website",
         "description": "I was provided with a design mockup as a PDF file which I replicated in design using HTML and CSS. In addition, I developed a responsive website that displays images, descriptions, and links to each of the portfolio projects that I have completed throughout the course of the Front - End Web Developer Nanodegree.",
    		"dates": 2015,
-		"images": {}
+		"images": ["images/project1.png"]
     }, {
         "title": "Interactive Resume",
         "description": "I have demonstrated my mastery of Javascript syntax through a series of challenges. Each multipart problem mimicked a real - life challenge that front - end developers face. I wrote clean code and applied my knowledge of variables, objects, JSON, functions and control flow to successfully solve the challenges. The end-product is this interactive resume!",
     	"dates":2015,
-    	"images": {}
+    	"images": ["images/project2_1.png","images/project2_2.png"]
     // }, {
     //     "title": "Classic Arcade Game Clone",
-    //     "description": "You will be provided with visual assets and a game loop engine;using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.",
+    //     "description": "Using visual assets and a game looping engine, I added a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.",
    	// 	"dates": 2015,
    	// 	"images": {}
     // }, {
@@ -263,7 +263,7 @@ projects.display = function() {
 
 		if (projects.projects[project].images.length>0) {
 			for (image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
 				$(".project-entry:last").append(formattedImage);
 			}
 		}
