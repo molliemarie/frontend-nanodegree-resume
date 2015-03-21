@@ -4,7 +4,7 @@
 
 var bio = {
 	"name": "Mollie Marie Pettit",
-	"role": "Web Developer",
+	"role": "Technical Specialist / Web Developer",
 	"contacts": {
 		"mobile": "+971569853123",
 		"email": "mollie.pettit@alumni.stanford.edu",
