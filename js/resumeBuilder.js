@@ -13,7 +13,7 @@ var bio = {
 		"location": "Abu Dhabi, UAE"
 	},
 	"WelcomeMessage": "A confident, creative, and versatile Technical Specialist with proven analytical expertise and a demonstrative track record delivering operational support and technical solutions in cutting-edge technological academic and commercial environments  ",
-	"skills": ["Programming", "CSS", "HTML", "Javascript", "Teaching", "Mathematics"],
+	"skills": ["Programming", "CSS", "HTML", "Javascript", "Teaching", "SCIENCE!"],
 	"biopic": "images/me.jpg",
 	"places_lived" : ["Morgantown, WV","Minneapolis, MN","Boulder, CO", "Blacksburg, VA", "Alexandria, VA", "Aberdeen, SD", "Cherokee, IA", "Bradenton, FL"]
 };
@@ -230,7 +230,7 @@ work.display();
 var projects = {
     "projects": [{
         "title": "Mockup to Website",
-        "description": "I was provided with a design mockup as a PDF file which I replicated in design using HTML and CSS. I developed a responsive website that displays images, descriptions, and links to each of the portfolio projects that I have completed throughout the course of the Front - End Web Developer Nanodegree.",
+        "description": "I was provided with a design mockup as a PDF file which I replicated in design using HTML and CSS. In addition, I developed a responsive website that displays images, descriptions, and links to each of the portfolio projects that I have completed throughout the course of the Front - End Web Developer Nanodegree.",
    		"dates": 2015,
 		"images": {}
     }, {
