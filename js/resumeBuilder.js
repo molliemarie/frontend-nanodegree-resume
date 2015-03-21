@@ -168,14 +168,21 @@ var work = {
             "location": "Stanford, CA, USA",
             "title": "Community Associate Training Coordinator",
             "years": "2013",
-            "description": ["Organized 12 training events for 130 Community Associates", "Introduced new templates and methods for simpler and easier tracking of activity", "Coordinated all logistical information between participants and maintained records of participation", "Created poster presentations to showcase the Graduate Life Office activities and yearly progress for Stanford’s yearly Assessment Fair"]
+            "description": ["Provided direct operational support to staff & students","Prepared, collated and evaluated on-line surveys, event participant logistical information and orientation projects","Introduced new templates and methods for simpler and easier tracking of activity"]
         },
         {
             "employer": "Stanford University",
             "location": "Stanford, CA, USA",
-            "title": "Researcher",
+            "title": "Researcher / Teaching Assistant",
             "years": "2010-2013",
-            "description": ["Conducted research on coastal bluff retreat in Pacifica, CA as part of a Master’s Degree", "Presented the results in a Master's thesis in 2013 as well as in presentations", "Research article published in the May 2014 issue of the Environmental & Engineering Geoscience Journal; a picture from my study was featured on the cover of the issue", "Utilized MATLAB, ArcGIS, Adobe Suites (Illustrator, Photoshop), and Microsoft Office (Word, Excel, PowerPoint) for data preparation, analysis, and presentation", "Communicated and coordinated with the local USGS as well as several California government offices for data collection"]
+            "description": ["Won a reputation as a dynamic teaching assistant for guiding, mentoring & appraising Stanford undergraduates","Gathered user requirements and created an integrated accessible geographic and topographic information system","Collated and analysed intelligence data; performing data modelling utilising ArcGIS and MATLAB software tools","Collaborated & coordinated research activity with government bodies & societies to enable project data collection","Evaluated and analysed data using Excel & created visual presentations using Illustrator, Photoshop & PowerPoint","Assessed and developed spatial statistics & analysis for simulation & modeling of environmental data"]
+        },
+        {
+        	"employer": "American Geosciences Institute",
+            "location": "Alexandria, VA, USA",
+            "title": "Geoscience and Public Policy Intern",
+            "years": "2009",
+            "description":["Explained scientific concepts to non-technical personnel in clear/easy to understand terms","Successfully managed AGI website updates; supporting and troubleshooting server and systems technical issues"]
         }
     ]
 };
@@ -193,33 +200,8 @@ work.display = function(){
 	    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].years);
 	    $(".work-entry:last").append(formattedDates);
 
-	 //    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-	 //    $(".work-entry:last").append(formattedDescription);
 
-		// $("#workExperience").append(HTMLworkDescriptionStart);
-		// var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[0]);
-		// $(".descript:last").append(formattedDescription);
-
-		// $("#workExperience").append(HTMLworkDescriptionStart);
-		// var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[1]);
-		// $(".descript:last").append(formattedDescription);
-
-		// $("#workExperience").append(HTMLworkDescriptionStart);
-		// var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[2]);
-		// $(".descript:last").append(formattedDescription);
-
-		// if (work.jobs[job].description.length>3) {
-		// 	$("#workExperience").append(HTMLworkDescriptionStart);
-		// 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[3]);
-		// 	$(".descript:last").append(formattedDescription);
-		// }
-
-		// if (work.jobs[job].description.length>4) {
-		// 	$("#workExperience").append(HTMLworkDescriptionStart);
-		// 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[4]);
-		// 	$(".descript:last").append(formattedDescription);
-		// }
-
+	    // add the descriptions in bulleted form
 		for (i in work.jobs[job].description) {
 			if (work.jobs[job].description.length>i) {
 				$("#workExperience").append(HTMLworkDescriptionStart);
