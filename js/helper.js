@@ -35,9 +35,9 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 
-var HTMLworkDescriptionStartBH = '<ul id="descript-BH"></ul>';
-var HTMLworkDescriptionStartStanRes = '<ul id="descript-StanRes"></ul>';
-var HTMLworkDescriptionStartStanTrainCoor = '<ul id="descript-StanTrainCoor"></ul>';
+var HTMLworkDescriptionStartBH = '<ul class="descript-BH"></ul>';
+var HTMLworkDescriptionStartStanRes = '<ul class="descript-StanRes"></ul>';
+var HTMLworkDescriptionStartStanTrainCoor = '<ul class="descript-StanTrainCoor"></ul>';
 var HTMLworkDescription = '<br><li><p>%data%</p></li>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';

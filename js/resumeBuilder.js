@@ -221,15 +221,15 @@ work.display = function(){
 
 		$("#workExperience").append(HTMLworkDescriptionStartBH);
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[0]);
-		$("#descript-BH").append(formattedDescription);
+		$(".descript-BH:last").append(formattedDescription);
 
 		$("#workExperience").append(HTMLworkDescriptionStartStanRes);
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[1]);
-		$("#descript-StanRes").append(formattedDescription);
+		$(".descript-StanRes:last").append(formattedDescription);
 
 		$("#workExperience").append(HTMLworkDescriptionStartStanTrainCoor);
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[2]);
-		$("#descript-BH").append(formattedDescription);
+		$(".descript-BH:last").append(formattedDescription);
 	}
 }
 work.display();
