@@ -6,14 +6,14 @@ var bio = {
 	"name": "Mollie Marie Pettit",
 	"role": "Geoscientist",
 	"contacts": {
-		"mobile": "056-985-3123",
+		"mobile": "+971569853123",
 		"email": "mollie.pettit@alumni.stanford.edu",
 		"github": "molliemarie",
 		"twitter": {},
 		"location": "Abu Dhabi, UAE"
 	},
-	"WelcomeMessage": "Welcome and stuff and stuff and stuff.",
-	"skills": ["awesomeness", "programming", "teaching", "CSS", "HTML", "Mathematics"],
+	"WelcomeMessage": "A confident, creative, and versatile Technical Specialist with proven analytical expertise and a demonstrative track record delivering operational support and technical solutions in cutting-edge technological academic and commercial environments  ",
+	"skills": ["Programming", "CSS", "HTML", "Javascript", "Teaching", "Mathematics"],
 	"biopic": "images/me.jpg",
 	"places_lived" : ["Morgantown, WV","Minneapolis, MN","Boulder, CO", "Blacksburg, VA", "Alexandria, VA", "Aberdeen, SD", "Cherokee, IA", "Bradenton, FL"]
 };
@@ -77,7 +77,7 @@ var education = {
 		{
 			"school": "Stanford University",
 			"location": "Palo Alto, CA",
-			"degree": "Masters",
+			"degree": "MS (honors)",
 			"dates": "2010-2013",
 			"major": ["Geology"], 
 			"url": "http://www.stanford.edu/"
@@ -85,7 +85,7 @@ var education = {
 		{
 			"school": "West Virginia University",
 			"location": "Morgantown, WV",
-			"degree": "BS",
+			"degree": "BS (honors)",
 			"dates": "2004-2009",
 			"major": ["Mathematics & Geology"],
 			"url": "http://www.wvu.edu/"
