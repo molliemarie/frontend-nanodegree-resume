@@ -35,7 +35,7 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 
-var HTMLworkDescriptionStartBH = '<ul class="descript-BH"></ul>';
+var HTMLworkDescriptionStart = '<ul class="descript"></ul>';
 var HTMLworkDescriptionStartStanRes = '<ul class="descript-StanRes"></ul>';
 var HTMLworkDescriptionStartStanTrainCoor = '<ul class="descript-StanTrainCoor"></ul>';
 var HTMLworkDescription = '<br><li><p>%data%</p></li>';

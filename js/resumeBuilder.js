@@ -161,7 +161,7 @@ var work = {
             "location": "Abu Dhabi, UAE",
             "title": "Geoscientist",
             "years": "2014 - Present",
-            "description": ["Process acoustic data for oil and gas wells in the Gulf geomarket", "Carry out deterministic and stochastic formation evaluation", "Prepare final product and deliverables for customers", "Awarded the 'Team Player' award at the conclusion of a five-week Geoscience Academy training course. "]
+            "description": ["Meticulously recorded & analysed detailed oil & gas data as a Baker Hughes geoscientist in the UAE","Proved versatile across field engineering trials on various geoscience projects; preparing and presenting results","Delivered final product presentations, quality & data reports for various stakeholder & client geoscience projects","Integrated customers requirements to deliver efficient, cost effective & intelligent technical solutions & support","Considered a hands-on technical professional with excellent communication skills; winning a team player award "]
         },
         {
         	"employer": "Stanford University",
@@ -180,29 +180,6 @@ var work = {
     ]
 };
 
-	// if(bio.skills.length > 0) {
-	// 	$("#header").append(HTMLskillsStart);
-
-	// 	var formattedSkill = HTMLskills.replace("%data%", 
-	// 		bio.skills[0]);
-	// 	$("#skills").append(formattedSkill);
-	// 	formattedSkill = HTMLskills.replace("%data%", 
-	// 		bio.skills[1]);
-	// 	$("#skills").append(formattedSkill);
-	// 	formattedSkill = HTMLskills.replace("%data%", 
-	// 		bio.skills[2]);
-	// 	$("#skills").append(formattedSkill);
-	// 	formattedSkill = HTMLskills.replace("%data%", 
-	// 		bio.skills[3]);
-	// 	$("#skills").append(formattedSkill);
-	// 	formattedSkill = HTMLskills.replace("%data%", 
-	// 		bio.skills[4]);
-	// 	$("#skills").append(formattedSkill);
-	// 	formattedSkill = HTMLskills.replace("%data%", 
-	// 		bio.skills[5]);
-	// 	$("#skills").append(formattedSkill);
-	// }
-
 work.display = function(){
 	for (var job in work.jobs) {
 
@@ -219,17 +196,37 @@ work.display = function(){
 	 //    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 	 //    $(".work-entry:last").append(formattedDescription);
 
-		$("#workExperience").append(HTMLworkDescriptionStartBH);
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[0]);
-		$(".descript-BH:last").append(formattedDescription);
+		// $("#workExperience").append(HTMLworkDescriptionStart);
+		// var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[0]);
+		// $(".descript:last").append(formattedDescription);
 
-		$("#workExperience").append(HTMLworkDescriptionStartStanRes);
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[1]);
-		$(".descript-StanRes:last").append(formattedDescription);
+		// $("#workExperience").append(HTMLworkDescriptionStart);
+		// var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[1]);
+		// $(".descript:last").append(formattedDescription);
 
-		$("#workExperience").append(HTMLworkDescriptionStartStanTrainCoor);
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[2]);
-		$(".descript-BH:last").append(formattedDescription);
+		// $("#workExperience").append(HTMLworkDescriptionStart);
+		// var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[2]);
+		// $(".descript:last").append(formattedDescription);
+
+		// if (work.jobs[job].description.length>3) {
+		// 	$("#workExperience").append(HTMLworkDescriptionStart);
+		// 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[3]);
+		// 	$(".descript:last").append(formattedDescription);
+		// }
+
+		// if (work.jobs[job].description.length>4) {
+		// 	$("#workExperience").append(HTMLworkDescriptionStart);
+		// 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[4]);
+		// 	$(".descript:last").append(formattedDescription);
+		// }
+
+		for (i in work.jobs[job].description) {
+			if (work.jobs[job].description.length>i) {
+				$("#workExperience").append(HTMLworkDescriptionStart);
+				var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[i]);
+				$(".descript:last").append(formattedDescription);
+			}			
+		}
 	}
 }
 work.display();
