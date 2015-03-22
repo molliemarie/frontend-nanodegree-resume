@@ -187,6 +187,9 @@ work.display = function(){
 	    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].years);
 	    $(".work-entry:last").append(formattedDates);
 
+	    var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+	    $(".work-entry:last").append(formattedLocation);
+
 
 	    // add the descriptions in bulleted form
 		for (i in work.jobs[job].description) {
