@@ -219,32 +219,12 @@ var projects = {
         "title": "Mockup to Website",
         "description": "I was provided with a design mockup as a PDF file which I replicated in design using HTML and CSS. In addition, I developed a responsive website that displays images, descriptions, and links to each of the portfolio projects that I have completed throughout the course of the Front - End Web Developer Nanodegree.",
    		"dates": 2015,
-		"images": ["images/project1.png"]
+		"images": ["images/project1.png", "images/project1_2.png"]
     }, {
         "title": "Interactive Resume",
         "description": "I have demonstrated my mastery of Javascript syntax through a series of challenges. Each multipart problem mimicked a real - life challenge that front - end developers face. I wrote clean code and applied my knowledge of variables, objects, JSON, functions and control flow to successfully solve the challenges. The end-product is this interactive resume!",
     	"dates":2015,
     	"images": ["images/project2_1.png","images/project2_2.png"]
-    // }, {
-    //     "title": "Classic Arcade Game Clone",
-    //     "description": "Using visual assets and a game looping engine, I added a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.",
-   	// 	"dates": 2015,
-   	// 	"images": {}
-    // }, {
-    //     "title": "Website Optimization",
-    //     "description": "You will optimize a provided website with a number of optimization - and performance - related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.",
-    // 	"dates": 2015,
-    // 	"images": {}
-    // }, {
-    //     "title": "Neighborhood Map Project",
-    //     "description": "You will develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit.You will then add additional functionality to this application, including: map markers to identify popular locations or places you’ d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations.You will then research and implement third - party APIs that provide additional information about each of these locations(such as StreetView images, Wikipedia articles, Yelp reviews, etc). ",
-    //     "dates": 2015,
-    //     "images": {}
-    // }, {
-    //     "title": "Feed Reader Testing",
-    //     "description": "In this project, you will be learning about testing with Javascript.Testing is an important part of the development process and many organizations practice a standard known as 'test-driven development' or TDD.This is when developers write tests first, before they ever start developing their application. Whether you work in an organization that writes tests extensively to inform product development or one that uses tests to encourage iteration, testing has become an essential skill in modern web development!",
-   	// 	"dates": 2015,
-   	// 	"images": {}
     }]
 }
 
@@ -263,7 +243,7 @@ projects.display = function() {
 
 		if (projects.projects[project].images.length>0) {
 			for (image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
+				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 				$(".project-entry:last").append(formattedImage);
 			}
 		}
