@@ -15,7 +15,8 @@ var bio = {
 	"WelcomeMessage": "A confident, creative, and versatile Technical Specialist with proven analytical expertise and a demonstrative track record delivering operational support and technical solutions in cutting-edge technological academic and commercial environments  ",
 	"skills": ["Programming", "CSS", "HTML", "Javascript", "Teaching", "SCIENCE!"],
 	"biopic": "images/me.jpg",
-	"places_lived" : ["Morgantown, WV","Minneapolis, MN","Boulder, CO", "Blacksburg, VA", "Alexandria, VA", "Aberdeen, SD", "Cherokee, IA", "Bradenton, FL"]
+	"places_lived" : ["Morgantown, WV","Minneapolis, MN","Boulder, CO", "Blacksburg, VA", "Alexandria, VA", "Aberdeen, SD", "Cherokee, IA", "Bradenton, FL"],
+	"skillsChart": "images/skillsChart.png"
 };
 
 bio.display = function(){
@@ -54,8 +55,15 @@ bio.display = function(){
 			$("#skills").append(formattedSkill);
 		}
 	}
+	var formattedSkillsChart = HTMLskillsChart.replace("%data%", bio.skillsChart);
+	$("#skillz").append(formattedSkillsChart);
 }
 bio.display();
+
+
+
+
+
 
 // EDUCATION SECTION
 
